@@ -1,0 +1,33 @@
+.teaching-practice { padding: 64px 0; border-bottom: 1px solid #ffffff50; scroll-margin-top: 32px; }
+.teaching-practice > header { display: grid; grid-template-columns: 1fr 1fr; gap: 6vw; margin-bottom: 40px; }
+.teaching-label { margin: 0 0 20px; font-size: 11px; text-transform: uppercase; letter-spacing: .12em; color: #ffffffb3; }
+.teaching-practice h2 { margin: 0; font-size: clamp(40px, 4.5vw, 72px); line-height: .98; letter-spacing: -.055em; font-weight: 600; }
+.teaching-practice h2 em { color: var(--orange); font-style: normal; }
+.teaching-intro p { margin: 0 0 18px; font-size: 16px; line-height: 1.65; color: #ffffffb8; }
+.teaching-intro p:first-child { font-size: 20px; line-height: 1.45; color: #fff; }
+.teaching-contexts { display: grid; grid-template-columns: repeat(3, minmax(0,1fr)); margin-bottom: 38px; border-top: 1px solid #ffffff40; border-left: 1px solid #ffffff40; }
+.teaching-contexts article { padding: 22px; border-right: 1px solid #ffffff40; border-bottom: 1px solid #ffffff40; }
+.teaching-contexts small { color: var(--orange); font-size: 11px; }
+.teaching-contexts h3 { font-size: 24px; line-height: 1.15; letter-spacing: -.025em; margin: 22px 0 12px; }
+.teaching-contexts p { margin: 0; font-size: 14px; line-height: 1.6; color: #ffffffb8; }
+.teaching-gallery { columns: 3; column-gap: 24px; }
+.teaching-gallery figure { margin: 0 0 30px; break-inside: avoid; }
+.teaching-gallery figure > a { display: block; position: relative; background: #222; }
+.teaching-gallery img { display: block; width: 100%; height: auto; }
+.teaching-gallery figure > a > span { position: absolute; right: 0; bottom: 0; width: 38px; height: 38px; display: grid; place-items: center; font-size: 22px; background: var(--orange); color: #fff; }
+.teaching-gallery figure > a:hover > span { background: #111; }
+.teaching-practice a:focus-visible { outline: 2px solid var(--orange); outline-offset: 5px; }
+.teaching-gallery figcaption { margin-top: 14px; border-top: 1px solid #ffffff40; padding-top: 14px; }
+.teaching-gallery figcaption b { font-size: 14px; font-weight: 500; }
+.teaching-gallery figcaption p { margin: 8px 0 0; font-size: 12px; line-height: 1.5; color: #ffffffa8; }
+.teaching-links { display: flex; flex-wrap: wrap; gap: 18px 30px; margin-top: 20px; }
+.teaching-links a { padding: 9px 0; border-bottom: 1px solid #ffffff70; font-size: 13px; }
+.teaching-links a:hover { color: var(--orange); }
+@media (max-width: 850px) {
+  .teaching-practice > header { grid-template-columns: 1fr; gap: 28px; }
+  .teaching-gallery { columns: 2; }
+}
+@media (max-width: 550px) {
+  .teaching-contexts { grid-template-columns: 1fr; }
+  .teaching-gallery { columns: 1; }
+}

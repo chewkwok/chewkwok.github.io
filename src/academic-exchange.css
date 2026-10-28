@@ -1,0 +1,26 @@
+.academic-exchange { padding: 60px 0; border-bottom: 1px solid #ffffff50; scroll-margin-top: 32px; }
+.academic-exchange > header { display: grid; grid-template-columns: 1fr 1fr; gap: 6vw; margin-bottom: 40px; }
+.academic-exchange-label { margin: 0 0 20px; color: #ffffffb3; font-size: 11px; letter-spacing: .12em; text-transform: uppercase; }
+.academic-exchange h2 { margin: 0; font-size: clamp(44px, 5vw, 80px); font-weight: 600; line-height: .95; letter-spacing: -.055em; }
+.academic-exchange h2 em { color: var(--orange); font-style: normal; }
+.academic-exchange-intro p { margin: 0 0 18px; color: #ffffffb8; font-size: 16px; line-height: 1.65; }
+.academic-exchange-intro p:first-child { color: #fff; font-size: 20px; line-height: 1.45; }
+.academic-exchange-intro > a { display: inline-block; padding: 7px 0; border-bottom: 1px solid #ffffff70; font-size: 13px; }
+.academic-exchange-gallery { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 36px 24px; }
+.academic-exchange-gallery figure { margin: 0; min-width: 0; }
+.academic-exchange-gallery figure > a { display: block; position: relative; background: #222; }
+.academic-exchange-gallery img { display: block; width: 100%; height: auto; }
+.academic-exchange-gallery figure > a > span { position: absolute; right: 0; bottom: 0; width: 38px; height: 38px; display: grid; place-items: center; color: #fff; background: var(--orange); font-size: 22px; transition: background .2s; }
+.academic-exchange-gallery figure > a:hover > span { background: #111; }
+.academic-exchange a:focus-visible { outline: 2px solid var(--orange); outline-offset: 5px; }
+.academic-exchange figcaption { margin-top: 14px; padding-top: 14px; border-top: 1px solid #ffffff40; }
+.academic-exchange figcaption b { font-size: 14px; font-weight: 500; }
+.academic-exchange figcaption p { margin: 8px 0 0; font-size: 12px; line-height: 1.5; color: #ffffffa8; }
+.academic-exchange-note { color: #ffffff90; font-size: 11px; line-height: 1.5; margin: 24px 0 0; }
+@media (max-width: 850px) {
+  .academic-exchange > header { grid-template-columns: 1fr; gap: 28px; }
+  .academic-exchange-gallery { grid-template-columns: 1fr 1fr; gap: 28px 18px; }
+}
+@media (max-width: 550px) {
+  .academic-exchange-gallery { grid-template-columns: 1fr; }
+}

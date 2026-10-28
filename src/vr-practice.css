@@ -1,0 +1,33 @@
+.vr-fieldwork { border-bottom: 1px solid #08080859; margin-bottom: 74px; padding-bottom: 74px; scroll-margin-top: 32px; }
+.vr-fieldwork-intro { display: grid; grid-template-columns: 1fr 1fr; gap: 6vw; margin-bottom: 40px; }
+.vr-fieldwork h2 { font-size: clamp(40px, 4.5vw, 72px); margin: 0; line-height: .98; letter-spacing: -.055em; font-weight: 600; }
+.vr-fieldwork h2 em { color: var(--orange); font-style: normal; }
+.vr-fieldwork-intro > div > p:not(.project-type) { font-size: 16px; line-height: 1.65; margin: 0 0 18px; }
+.vr-fieldwork-intro > div > p:first-child:not(.project-type) { font-size: 20px; line-height: 1.45; }
+.vr-fieldwork-intro small { font-size: 11px; color: #666; }
+.vr-fieldwork-gallery { display: grid; grid-template-columns: 1fr 1.35fr 1fr; align-items: start; gap: 24px; }
+.vr-photo { min-width: 0; margin: 0; }
+.vr-photo-showcase { grid-column: 1; grid-row: 1 / 3; }
+.vr-photo-visitors { grid-column: 3; grid-row: 1 / 3; }
+.vr-photo-workstation { grid-column: 2; grid-row: 1; }
+.vr-photo-headset { grid-column: 2; grid-row: 2; }
+.vr-photo a { display: block; position: relative; background: #ddd6ca; }
+.vr-photo a > img { display: block; width: 100%; height: auto; }
+.vr-photo a > span { position: absolute; right: 0; bottom: 0; display: grid; place-items: center; width: 38px; height: 38px; background: #111; color: #fff; font-size: 22px; transition: background .2s; }
+.vr-photo a:hover > span { background: var(--orange); }
+.vr-photo a:focus-visible { outline: 2px solid var(--orange); outline-offset: 4px; }
+.vr-photo figcaption { padding: 14px 0 0; border-top: 1px solid #1113; margin-top: 12px; }
+.vr-photo figcaption b { font-size: 14px; font-weight: 600; }
+.vr-photo figcaption p { font-size: 12px; line-height: 1.5; margin: 7px 0 0; color: #555; }
+@media (max-width: 950px) {
+  .vr-fieldwork-intro { grid-template-columns: 1fr; gap: 28px; }
+  .vr-fieldwork-gallery { grid-template-columns: 1fr 1fr; gap: 28px 18px; }
+  .vr-photo { grid-column: auto; grid-row: auto; }
+  .vr-photo-showcase { order: 0; }
+  .vr-photo-visitors { order: 1; }
+  .vr-photo-workstation { order: 2; }
+  .vr-photo-headset { order: 3; }
+}
+@media (max-width: 550px) {
+  .vr-fieldwork-gallery { grid-template-columns: 1fr; gap: 30px; }
+}
