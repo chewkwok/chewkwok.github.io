@@ -23,6 +23,7 @@ jobs:
         run: |
           if [ ! -f package.json ]; then
             unzip -qo portfolio-source.zip
+            python3 -c 'import json,pathlib; p=pathlib.Path("scripts/media-manifest.json"); d=json.loads(p.read_text()); d["files"]=[f for f in d["files"] if not f["path"].startswith(".")]; p.write_text(json.dumps(d,indent=2)+"\n")'
           fi
       - name: Verify and import public media
         run: python3 scripts/restore-media.py
